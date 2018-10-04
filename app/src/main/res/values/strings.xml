@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Salamat Bashid</string>
+    <string name="title_activity_main">سلامت باشید</string>
+    <string name="title_home">خانه</string>
+    <string name="title_check_up">چکاپ</string>
+    <string name="title_offer">پیشنهادات</string>
 </resources>
