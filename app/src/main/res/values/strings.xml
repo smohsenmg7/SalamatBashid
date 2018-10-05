@@ -1,10 +1,11 @@
 <resources>
-    <string name="app_name">Salamat Bashid</string>
+    <string name="app_name">سلامت باشید</string>
     <string name="title_activity_main">سلامت باشید</string>
     <string name="title_home">خانه</string>
     <string name="title_check_up">چکاپ</string>
     <string name="title_offer">پیشنهادات</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_weight_checkup">WeightCheckupActivity</string>
+    <string name="action_settings">Settings</string>
 </resources>
