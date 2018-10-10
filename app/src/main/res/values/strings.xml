@@ -8,4 +8,8 @@
 
     <string name="title_activity_weight_checkup">WeightCheckupActivity</string>
     <string name="action_settings">Settings</string>
+    <string name="height_cm">قد (سانتی متر)</string>
+    <string name="weight_kg">وزن(کیلوگرم)</string>
+    <string name="male">مرد</string>
+    <string name="female">زن</string>
 </resources>
