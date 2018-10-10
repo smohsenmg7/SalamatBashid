@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.NumberPicker;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class WeightCheckupActivity extends AppCompatActivity {
@@ -13,7 +14,13 @@ public class WeightCheckupActivity extends AppCompatActivity {
     float height = 160, bmi;
     ImageView userBodyImageView, normalBodyImageView;
     RadioButton maleRadioButton, femaleRadioButton;
-    int lastImage;
+    RadioGroup radioGroupGender;
+    int lastImage, selectedId,
+            gender_body1 = R.drawable.body_1,
+            gender_body2 = R.drawable.body_2,
+            gender_body3 = R.drawable.body_3,
+            gender_body4 = R.drawable.body_4,
+            gender_body5 = R.drawable.body_5;
 
     NumberPicker weightNumberPicker, heightNumberPicker;
 
@@ -26,6 +33,7 @@ public class WeightCheckupActivity extends AppCompatActivity {
         normalBodyImageView.setAlpha(0f);
         normalBodyImageView.animate().alpha(1f).setDuration(1000);
 
+        selectedId = radioGroupGender.getCheckedRadioButtonId();
 
         weightNumberPicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
             @Override
@@ -57,31 +65,29 @@ public class WeightCheckupActivity extends AppCompatActivity {
         bmi = weight / (height * height);
         if (bmi < 18.5 && lastImage != 1) {
             userBodyImageView.setAlpha(0f);
-
-            userBodyImageView.setImageResource(R.drawable.body_1);
+            userBodyImageView.setImageResource(gender_body1);
             userBodyImageView.animate().alpha(1f).setDuration(1000);
-            lastImage=1;
             lastImage = 1;
         } else if (bmi >= 18.5 && bmi < 25 && lastImage != 2) {
             userBodyImageView.setAlpha(0f);
-            userBodyImageView.setImageResource(R.drawable.body_2);
+            userBodyImageView.setImageResource(gender_body2);
             userBodyImageView.animate().alpha(1f).setDuration(1000);
-            lastImage=2;
+            lastImage = 2;
         } else if (bmi >= 25 && bmi < 30l && lastImage != 3) {
             userBodyImageView.setAlpha(0f);
-            userBodyImageView.setImageResource(R.drawable.body_3);
+            userBodyImageView.setImageResource(gender_body3);
             userBodyImageView.animate().alpha(1f).setDuration(1000);
-            lastImage=3;
+            lastImage = 3;
         } else if (bmi > 30 && bmi < 35 && lastImage != 4) {
             userBodyImageView.setAlpha(0f);
-            userBodyImageView.setImageResource(R.drawable.body_4);
+            userBodyImageView.setImageResource(gender_body4);
             userBodyImageView.animate().alpha(1f).setDuration(1000);
-            lastImage=4;
+            lastImage = 4;
         } else if (bmi >= 35 && lastImage != 5) {
             userBodyImageView.setAlpha(0f);
-            userBodyImageView.setImageResource(R.drawable.body_5);
+            userBodyImageView.setImageResource(gender_body5);
             userBodyImageView.animate().alpha(1f).setDuration(1000);
-            lastImage=5;
+            lastImage = 5;
         }
     }
 
@@ -93,5 +99,7 @@ public class WeightCheckupActivity extends AppCompatActivity {
         maleRadioButton = findViewById(R.id.radioButton_male);
         femaleRadioButton = findViewById(R.id.radioButton_female);
         normalBodyImageView = findViewById(R.id.normal_body_image);
+        radioGroupGender = findViewById(R.id.radio_gender);
     }
+
 }
