@@ -8,6 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageSwitcher;
+import android.widget.ImageView;
 import android.widget.QuickContactBadge;
 import android.widget.Toast;
 
@@ -17,7 +19,7 @@ import android.widget.Toast;
  */
 public class CheckUpFragment extends Fragment {
 
-    Button button;
+    ImageView imageView;
 
     public CheckUpFragment() {
         // Required empty public constructor
@@ -31,10 +33,11 @@ public class CheckUpFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_check_up, container, false);
 
-        button = (Button) view.findViewById(R.id.weight_checkup_bt);
-        button.setOnClickListener(new View.OnClickListener() {
+        imageView=(ImageView) view.findViewById(R.id.imageView);
+
+        imageView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 startActivity(new Intent(getActivity().getApplicationContext(), WeightCheckupActivity.class));
             }
         });

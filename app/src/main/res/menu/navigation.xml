@@ -15,6 +15,7 @@
     <item
         android:id="@+id/navigation_promotion"
         android:icon="@drawable/ic_offer"
-        android:title="@string/title_offer" />
+        android:title="@string/title_offer"
+        />
 
 </menu>

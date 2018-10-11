@@ -5,8 +5,17 @@
     <string name="title_check_up">چکاپ</string>
     <string name="title_offer">پیشنهادات</string>
 
-    <string name="title">عنوان عنوان عنوان عنوان عنوان عنوان</string>
-    <string name="context">متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن</string>
+    <string name="title1">بهترین تمرین ورزشی برای شما کدام است؟</string>
+    <string name="context1">بهترین ورزش برای شما کدام است؟ همان که آن را انجام خواهید داد...</string>
+
+    <string name="title2">ورزش های مفید برای کودکان و نوجوانان</string>
+    <string name="context2">فعالیت جسمی و ورزش در سنین کودکی و نوجوانی باعث رشد بهتر و تناسب اندام ایده آل برای کودک و نوجوان می شود...</string>
+
+    <string name="title3">اصول مهم برای کم شدن وزن</string>
+    <string name="context3">اصولی که برای تغذیه درست و کاهش وزن باید در نظر بگیرید...</string>
+
+    <string name="title4">چای سیاه بهترین دارو برای درمان دیابت</string>
+    <string name="context4">چای جایگاه بالایی در خانواده های ایرانی دارد. چای سیاه در شمال کشور کشت شده و به بازار ارئه می شود  ...</string>
 
     <string name="title_activity_weight_checkup">WeightCheckupActivity</string>
     <string name="action_settings">Settings</string>

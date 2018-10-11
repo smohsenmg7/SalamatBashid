@@ -35,7 +35,7 @@ public class WeightCheckupActivity extends AppCompatActivity {
         radioGroupGender.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                lastImage =-1;
+                lastImage = -1;
                 changePhotoGender(checkedId);
             }
         });
