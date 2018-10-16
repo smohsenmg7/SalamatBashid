@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
+    style=""
     android:orientation="vertical">
 
     <LinearLayout
@@ -53,7 +54,7 @@
                 android:layout_above="@id/normal_body_tv"
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/body_2" />
+                android:src="@drawable/body_2" />
 
             <TextView
                 android:id="@+id/normal_body_tv"
@@ -66,6 +67,14 @@
         </RelativeLayout>
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/user_message"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:textAlignment="center"
+        style="@style/Base.TextAppearance.AppCompat.Large" />
 
     <LinearLayout
         android:layout_width="wrap_content"
